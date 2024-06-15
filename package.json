@@ -61,5 +61,14 @@
     "type": "git"
   },
   "author": "ghoulz + trent",
+  "keywords": [
+    "ethereum",
+    "smart-contracts",
+    "defi",
+    "rebase",
+    "elastic-supply",
+    "uniswap",
+    "farming"
+  ],
   "license": "ISC"
 }
