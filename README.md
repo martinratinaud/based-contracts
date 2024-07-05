@@ -1,5 +1,8 @@
 # BASED Protocol Smart Contracts
 
+[![License](https://img.shields.io/badge/license-ISC-blue.svg)](LICENSE)
+[![Solidity](https://img.shields.io/badge/solidity-0.6.12-brightgreen.svg)](https://soliditylang.org/)
+
 ## Overview
 This repository contains the smart contracts for the BASED protocol, a decentralized elastic supply token ecosystem.
 
