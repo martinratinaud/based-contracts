@@ -45,7 +45,7 @@ contract FarmingRover is Rover, ERC20, ReentrancyGuard {
     function rugPull() public override nonReentrant {
         claimReward();
 
-        // this couses reentracy
+        // this causes reentrancy
         super.rugPull();
     }
 
