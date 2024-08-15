@@ -42,7 +42,7 @@ contract BasedGod {
         return tokenRover[token];
     }
 
-    /// @dev Use this Rover if you want to depoit tokens directly to Rover contract and you don't need to farm
+    /// @dev Use this Rover if you want to deposit tokens directly to Rover contract and you don't need to farm
     /// @param _rewardToken address of the reward token
     /// @param _pair through which pair do you want to sell reward tokens, either "sUSD" or "WETH"
     function createNewRoverVault(address _rewardToken, string calldata _pair) external returns (RoverVault rover) {
