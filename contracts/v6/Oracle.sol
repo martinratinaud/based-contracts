@@ -82,6 +82,9 @@ interface UFragmentsI {
 
 import '@openzeppelin/contracts/access/Ownable.sol';
 
+/// @title BASEDOracle - Price oracle for BASED token using Uniswap V2 TWAP
+/// @notice This contract provides price data for the BASED token using time-weighted average prices
+/// @dev Implements a 23-hour TWAP to ensure rebase operations can always call update
 contract BASEDOracle is Ownable, ExampleOracleSimple, IOracle {
 
     uint256 constant SCALE = 10 ** 18;
