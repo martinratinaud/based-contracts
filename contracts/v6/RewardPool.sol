@@ -733,10 +733,12 @@ contract NoMintRewardPool is LPTokenWrapper, IRewardDistributionRecipient {
         getReward();
     }
 
+    /// @notice Claims earned rewards for the caller
+    /// @dev Follows checks-effects-interactions pattern to prevent reentrancy
     function getReward() public updateReward(msg.sender) {
         uint256 reward = earned(msg.sender);
         if (reward > 0) {
-            rewards[msg.sender] = 0;
+            rewards[msg.sender] = 0; // State update before transfer (CEI pattern)
             rewardToken.safeTransfer(msg.sender, reward);
             emit RewardPaid(msg.sender, reward);
         }
