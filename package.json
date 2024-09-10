@@ -1,7 +1,7 @@
 {
   "name": "based-smart-contracts",
   "version": "1.0.0",
-  "description": "",
+  "description": "Smart contracts for BASED Protocol - An elastic supply token with automated farming and liquidity strategies",
   "main": "buidler.config.js",
   "directories": {
     "test": "test"
