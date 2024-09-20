@@ -33,13 +33,15 @@ contract MoonBase is ERC20, ERC20Detailed {
     }
 
     /// @param _amount amount in BASED to deposit
+    /// @notice Deposits BASED tokens and mints shares proportional to pool ownership
     function deposit(uint _amount) public {
         require(_amount > 0, "Nothing to deposit");
 
         uint _pool = balance();
         based.transferFrom(msg.sender, address(this), _amount);
         uint _after = balance();
-        _amount = _after.sub(_pool); // Additional check for deflationary baseds
+        // Calculate actual received amount to handle deflationary tokens or transfer fees
+        _amount = _after.sub(_pool);
         uint shares = 0;
         if (totalSupply() == 0) {
             shares = _amount;
