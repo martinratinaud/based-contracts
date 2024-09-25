@@ -46,7 +46,7 @@ module.exports = {
     version: "0.6.12",
     optimizer: {
       enabled: true,
-      runs: 200
+      runs: 200 // Balanced optimization for deployment and runtime costs
     }
   },
   paths: {
