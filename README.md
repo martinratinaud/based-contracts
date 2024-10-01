@@ -25,3 +25,23 @@ This repository contains the smart contracts for the BASED protocol, a decentral
 ## Development
 
 Built with Buidler (now Hardhat)
+
+### Setup
+```bash
+npm install
+```
+
+### Compile
+```bash
+npm run compile:all
+```
+
+### Test
+```bash
+npm run test
+```
+
+### Lint
+```bash
+npm run lint
+```
